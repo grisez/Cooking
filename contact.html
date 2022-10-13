@@ -1,0 +1,77 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>cooking-blog</title>   
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+        <body>   
+            <header>
+                <div>
+                    <a href="index.html"><img class="logo" src="picture/les-delices-de-nini.png" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul class="conteneurMenu">
+                        <li><a class=" typomenu2 menucolor" href="index.html">ACCUEIL</a></li>
+                        <li><a class =" typomenu2" href="presentation.html">A PROPOS</a></li>
+                        <li><a class ="  typomenu2"href="recipes.html">RECETTES</a></li>
+                        <li><a class =" typomenu2"href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1 class="specialtitle">CONTACT</h1>
+            <div class="conteneurcontact">
+                <div class=" bloc backgroundcontact">
+                    <p>Vous êtes à la recherche de la BONNE PATISSIERE pour vous accompagner dans votre projet.</p>
+                    <p>J’ai hâte de collaborer avec vous.</p>
+                    <p>Contactez moi pour que nous en discutions ensemble.</p>
+                </div>
+                <div class="formulaire">
+                    <h1 class="titleformulaire">FORMULAIRE DE CONTACT</h1>
+                    <form id="contactform" method="post">
+                        <div>
+                            <label class="sizeformulaire" for="nom">Votre Nom et Prénom</label><br/>
+                            <input class="cas" type="text" id="nom" name="nom" placeholder="Nom et Prénom" required>
+                        </div>
+                        <div>
+                            <label class="sizeformulaire" for="email">Votre e-mail</label><br/>
+                            <input class="cas" type="email" id="email" name="email" placeholder="Votreadresse@mail.com" required>
+                        </div>
+                        <div>
+                            <label class="sizeformulaire"for="sujet">Quel est le sujet de votre message ?</label><br/>
+                            <select name="sujet" id="sujet" required>
+                                <option class="sizeformulaire" value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                                <option value="devis">Besoin d'un devis</option>
+                                <option value="commande">Suivi de ma commande</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="sizeformulaire" for="message">Votre message</label><br/>
+                            <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Envoyer</button>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+            <footer>
+                <div class="footertitle">
+                    ME SUIVRE
+                </div>
+                    <a href="https://www.instagram.com/"target="_blank">
+                        <img class="sizelogo" src="picture/logo-instagram.png" alt="logo_instagram">
+                    </a>
+                    <a href="https://www.facebook.com/"target="_blank">
+                        <img class="sizelogo" src="picture/logo-facebook.png" alt="logo_instagram">
+                    </a>
+                    <a href="https://www.pinterest.fr/"target="_blank">
+                        <img class="sizelogo" src="picture/logo-pinterest.png" alt="logo_instagram">
+                    </a>
+            </footer>
+              <!-- Connect the Javascript file -->
+        <script src="script.js"></script>
+    </body> 
+</html>
